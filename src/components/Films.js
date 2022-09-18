@@ -1,20 +1,20 @@
 import React from 'react';
-export default function PlayersPresentation ( { players } ) {
-    console.log( players );
+import { Films } from '../shared/ListOfFilms';
+export default function films () {
     return (
         <div>
             <div className='container'>
-                {players.map( ( player ) =>
+                {Films.map( ( film ) =>
                     <div className='column'>
                         <div className='card'>
                             <div className='card-img'>
-                                <img src={player.img} />
+                                <img src={film.img} />
                             </div>
                             <h3>
-                                {player.name}
+                                {film.name}
                             </h3>
                             <p className='title'>
-                                {player.club}
+                                {film.club}
                             </p>
                             <div className='card-btn'>
                                 <p>

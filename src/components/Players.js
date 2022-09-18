@@ -25,7 +25,7 @@ export default function players () {
                             </div>
                         </div>
                     </div>
-                )}
+                )};
             </div>
         </div>
     );
