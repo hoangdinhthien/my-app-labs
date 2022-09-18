@@ -1,10 +1,11 @@
 import React from 'react';
-import { Players } from './shared/ListOfPlayers';
-export default function players () {
+
+export default function PlayersPresentation ( { players } ) {
+    console.log( players );
     return (
         <div>
             <div className='container'>
-                {Players.map( ( player ) =>
+                {players.map( ( player ) =>
                     <div className='column'>
                         <div className='card'>
                             <div className='card-img'>
