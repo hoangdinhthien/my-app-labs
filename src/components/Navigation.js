@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Navigation extends Component {
-    render () {
-        return (
+export default function Navigation () {
+    return (
+        <div>
             <div className='nav-menu'>
                 <nav>
                     <ul className='nav-menu-list'>
@@ -21,6 +21,6 @@ export default class Navigation extends Component {
                     </ul>
                 </nav>
             </div>
-        );
-    }
+        </div>
+    );
 }
