@@ -104,11 +104,15 @@ html {
 }
 
 .film-card-img img {
-  display: block;
   float: left;
-  max-width: 100%;
-  height: 250px;
+  width: 100%;
+  height: 800px;
   object-fit: fill;
+}
+
+.film-content-item {
+  display: block;
+  justify-content: center;
 }
 
 .card-btn button {
@@ -121,11 +125,6 @@ html {
   background-color: black;
 }
 
-.footer {
-  background-color: yellow;
-  padding: 0.5rem;
-  font-size: 1.2rem;
-}
 
 @keyframes App-logo-spin {
   from {

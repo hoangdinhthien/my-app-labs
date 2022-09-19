@@ -14,12 +14,14 @@ export default function FilmsPresentation ( { films } ) {
                             <h2>
                                 {film.title}
                             </h2>
-                            <p className='film-content'>
-                                Year: {film.year}
-                            </p>
-                            <p className='film-content'>
-                                Nation: {film.nation}
-                            </p>
+                            <div className='film-content'>
+                                <p className='film-content-item'>
+                                    Year: {film.year}
+                                </p>
+                                <p className='film-content-item'>
+                                    Nation: {film.nation}
+                                </p>
+                            </div>
                             <div className='card-btn'>
                                 <p>
                                     <button>

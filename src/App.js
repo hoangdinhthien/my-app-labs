@@ -9,7 +9,7 @@ function App () {
   return (
     <div className='App'>
       <Navigation />
-      <Main />
+      {/* <Main /> */}
       <MainFilms />
       <Footer />
     </div >
