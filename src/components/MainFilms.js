@@ -9,7 +9,7 @@ export class MainFilms extends Component {
         };
     }
     render () {
-        return <FilmsPresentation players={this.state.films} />;
+        return <FilmsPresentation films={this.state.films} />;
     }
 }
 

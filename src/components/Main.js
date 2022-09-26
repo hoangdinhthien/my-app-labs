@@ -6,6 +6,7 @@ export class Main extends Component {
         super();
         this.state = {
             players: Players,
+
         };
     }
     render () {

@@ -1,6 +1,8 @@
 import React from 'react';
+import { useState } from 'react';
 export default function PlayersPresentation ( { players } ) {
-    console.log( players );
+    console.log( players ); //in ra all gia tri
+    const [player, setPlayer] = useState( 0 );
     return (
         <div>
             <div className='container'>
@@ -18,14 +20,24 @@ export default function PlayersPresentation ( { players } ) {
                             </p>
                             <div className='card-btn'>
                                 <p>
-                                    <button>
-                                        Detail
+                                    <button onClick={() => { setPlayer( player ); }}>
+                                        <a style={{ color: 'white', textDecoration: 'none' }} href='#popup1' id='openPopUp'>Detail</a>
                                     </button>
                                 </p>
                             </div>
                         </div>
                     </div>
                 )}
+                <div id='popup1' className='overlay'>
+                    <div className='popup'>
+                        <img src={player.img} />
+                        <h2>{player.name}</h2>
+                        <a className='close' href='#'>&times;</a>
+                        <div className='content'>
+                            {player.info}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
