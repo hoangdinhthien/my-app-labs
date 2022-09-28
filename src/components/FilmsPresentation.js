@@ -1,15 +1,16 @@
 import React from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
+import { usePopUp } from '../customHook/usePopUp';
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 
 export default function FilmsPresentation ( { films } ) {
-    console.log( films );// in ra all gia tri
-    const [film, setFilm] = useState( 0 );
+    // console.log( films );// in ra all gia tri
+    const { film, togglePopUp } = usePopUp();
     const { theme, toggle, dark } = useContext( ThemeContext );
     return (
         <div>
-            <div className='film-container'>
+            <div className='film-container' style={{ color: theme.backgroundColor, backgroundColor: theme.color, }}>
                 {films.map( ( film ) =>
                     <div className='column'>
                         <div className='film-card'>
@@ -52,7 +53,7 @@ export default function FilmsPresentation ( { films } ) {
                                             }}
                                             href='#popup1'
                                             id='openPopUp'
-                                            onClick={( toggle ) => { setFilm( film ); }}>
+                                            onClick={() => { togglePopUp( film ); }}>
                                             Detail
                                         </button>
                                     </a>
@@ -62,11 +63,11 @@ export default function FilmsPresentation ( { films } ) {
                     </div>
                 )}
                 <div id='popup1' className='overlay'>
-                    <div className='film-popup'>
+                    <div style={{ color: theme.color }} className='film-popup'>
                         <img src={film.img} />
-                        <a className='close' href='#'>&times;</a>
-                        <h2 className='content'>{film.title}</h2>
-                        <div className='content'>
+                        <a style={{ color: theme.color }} className='close' href='#'>&times;</a>
+                        <h1 style={{ color: theme.color }} className='content'>{film.title}</h1>
+                        <div style={{ color: theme.color }} className='content'>
                             {film.info}
                         </div>
                     </div>

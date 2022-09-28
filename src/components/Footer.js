@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
+import { useContext } from 'react';
+import { ThemeContext } from './ThemeContext';
 
-export default class Footer extends Component {
-    render () {
-        return (
-            <div className='footer'>
+export default function Footer () {
+    const { theme, toggle, dark } = useContext( ThemeContext );
+    return (
+        <div className='footer' style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
+            <span className='footer-item' style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
                 copyright &copy; 2022
-            </div>
-        );
-    }
+            </span>
+        </div>
+    );
 }

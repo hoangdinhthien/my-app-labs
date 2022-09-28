@@ -1,7 +1,7 @@
 export const Films = [
     {
         id: 1,
-        title: 'Star Wars: Episode IV - A New Hope',
+        title: 'Star Wars',
         year: '1977',
         nation: 'USA',
         img: 'assets/imagesLab1/starwars.jpg',
@@ -34,7 +34,7 @@ export const Films = [
     },
     {
         id: 4,
-        title: 'Violet Evergarden: The Movie',
+        title: 'Violet Evergarden',
         year: '2020',
         nation: 'Japan',
         img: 'assets/imagesLab1/violet.jpg',
@@ -46,7 +46,7 @@ export const Films = [
     },
     {
         id: 5,
-        title: 'Tôi Thấy Hoa Vàng Trên Cỏ Xanh',
+        title: 'Yellow Flowers',
         year: '2015',
         nation: 'Vietnam',
         img: 'assets/imagesLab1/Toithayhoavangtrencoxanh.jpg',
@@ -75,7 +75,7 @@ export const Films = [
     },
     {
         id: 8,
-        title: 'If Cats Disappeared From The World',
+        title: 'If Cats Disappeared',
         year: '2016',
         nation: 'Japan',
         img: 'assets/imagesLab1/1442579.jpg',

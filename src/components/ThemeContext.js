@@ -20,7 +20,7 @@ const initialState = {
 
 const ThemeContext = React.createContext( initialState );
 
-//•	Create a method which wraps all children with ThemeContext.Provider component 
+//Create a method which wraps all children with ThemeContext.Provider component 
 //and export this method and the actual ThemeContext object that we created just before.
 function ThemeProvider ( { children } ) {
     const [dark, setDark] = useState( false ); //default theme is light 
