@@ -1,6 +1,4 @@
 import { useState } from "react";
-
-
 const usePopUp = () => {
     const [film, setFilm] = useState( {} );
     const togglePopUp = ( movie ) => {

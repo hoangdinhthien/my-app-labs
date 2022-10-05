@@ -1,5 +1,6 @@
 import React from 'react';
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { ThemeContext } from './ThemeContext';
 
 export default function Navigation () {
@@ -10,16 +11,16 @@ export default function Navigation () {
                 <div className='nav-menu'>
                     <ul className='menu-list'>
                         <li className='menu-list-item'>
-                            <a style={{ color: theme.color }} className='menu-list-item-link active' href='#home'>Home</a>
+                            <Link style={{ color: theme.color }} className='menu-list-item-link active' to='/'>Home</Link>
                         </li>
                         <li className='menu-list-item'>
-                            <a style={{ color: theme.color }} className='menu-list-item-link' href='#news'>News</a>
+                            <Link style={{ color: theme.color }} className='menu-list-item-link' to='#'>News</Link>
                         </li>
                         <li className='menu-list-item'>
-                            <a style={{ color: theme.color }} className='menu-list-item-link' href='#about'>About</a>
+                            <Link style={{ color: theme.color }} className='menu-list-item-link' to='#'>About</Link>
                         </li>
                         <li className='menu-list-item'>
-                            <a style={{ color: theme.color }} className='menu-list-item-link' href='#contact'>Contact</a>
+                            <Link style={{ color: theme.color }} className='menu-list-item-link' to='/contact'>Contact</Link>
                         </li>
                     </ul>
                 </div>

@@ -1,8 +1,9 @@
 import React from 'react';
-// import { useState } from 'react';
+import { useState } from 'react';
 import { usePopUp } from '../customHook/usePopUp';
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
+import { Link } from 'react-router-dom';
 
 export default function FilmsPresentation ( { films } ) {
     // console.log( films );// in ra all gia tri
@@ -34,30 +35,32 @@ export default function FilmsPresentation ( { films } ) {
                                 </p>
                             </div>
                             <div className='card-btn'>
-                                <p>
-                                    <a
-                                        style={{
-                                            textDecoration: 'none',
-                                            outline: 'none'
-                                        }}
-                                        href='#popup1'
-                                        id='openPopUp'
-                                    >
-                                        <button className='switch-mode'
+                                <Link to={`detail/${film.id}`} >
+                                    <p>
+                                        <a
                                             style={{
-                                                color: theme.color,
-                                                backgroundColor: theme.backgroundColor,
                                                 textDecoration: 'none',
-                                                outline: 'none',
-                                                border: 'none'
+                                                outline: 'none'
                                             }}
                                             href='#popup1'
                                             id='openPopUp'
-                                            onClick={() => { togglePopUp( film ); }}>
-                                            Detail
-                                        </button>
-                                    </a>
-                                </p>
+                                        >
+                                            <button className='switch-mode'
+                                                style={{
+                                                    color: theme.color,
+                                                    backgroundColor: theme.backgroundColor,
+                                                    textDecoration: 'none',
+                                                    outline: 'none',
+                                                    border: 'none'
+                                                }}
+                                                href='#popup1'
+                                                id='openPopUp'
+                                                onClick={() => { togglePopUp( film ); }}>
+                                                Detail
+                                            </button>
+                                        </a>
+                                    </p>
+                                </Link>
                             </div>
                         </div>
                     </div>
