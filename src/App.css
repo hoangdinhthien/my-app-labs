@@ -48,7 +48,7 @@ html {
 }
 
 /* ---------------------------navigation----------------------------*/
-.nav {
+/* .nav {
   background-color: black;
   display: flex;
   padding: 0 18.5rem;
@@ -71,12 +71,12 @@ html {
 
 .menu-list {
   display: flex;
-  /* xóa dấu chấm của ul/li */
+  xóa dấu chấm của ul/li
   list-style-type: none;
   align-items: center;
-}
+} */
 
-.menu-list-item {}
+/* .menu-list-item {}
 
 .menu-list-item-link {
   display: block;
@@ -85,54 +85,54 @@ html {
   color: white;
   padding: 1rem 3.5rem;
   transition: 0.5s;
-}
+} */
 
-.menu-list-item-link:hover {
+/* .menu-list-item-link:hover {
   color: red;
   transition: 0.5s;
-}
+} */
 
-.active {
+/* .active {
   background-color: rgb(129, 129, 240);
-}
+} */
 
-.switch-mode {
+/* .switch-mode {
   text-decoration: none;
   font-size: 2.6rem;
-}
+} */
 
 /* ---------------------------------------------------------------- */
 
 
 
 /* -----------------------------Players---------------------------- */
-.container {
-  /* border: 1px solid red; */
+/* .container {
+  border: 1px solid red;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /*fr: fraction*/
+  fr: fraction
   gap: 2rem;
   padding: 2.5rem 0.5rem;
   margin: 0 3.5rem;
-}
+} */
 
 /* ---------------------------------------------------------------- */
 
 /* ----------------------------film/player------------------------  */
-.film-container {
-  /* border: 2px solid red; */
+/* .film-container {
+  border: 2px solid red;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /*fr: fraction*/
+  fr: fraction
   gap: 10rem 5rem;
   padding: 5rem 15rem;
-}
+} */
 
-.card {
+/* .card {
   background-color: rgb(207, 205, 197);
-}
+} */
 
-.film-card {
+/* .film-card {
   height: 100%;
   border: 1px solid black;
   justify-content: center;
@@ -141,37 +141,37 @@ html {
   background-color: rgb(189, 163, 187);
   box-shadow: 7px 7px 1px #acadaf;
   transition: 0.4s;
-}
+} */
 
-.card h3 {
+/* .card h3 {
   font-style: bold;
-}
+} */
 
 /* player img */
 .card-img img {
   display: block;
   float: left;
   width: 100%;
-  height: auto;
+  height: 50rem;
 }
 
 /* film img */
-.film-card-img img {
-  /* border: 1px solid black; */
+/* .film-card-img img {
+  border: 1px solid black;
   float: left;
   width: 100%;
   height: 60rem;
   object-fit: fill;
-}
+} */
 
-.film-content-item {
+/* .film-content-item {
   display: block;
   justify-content: center;
   padding: 1rem;
   font-size: 2rem;
-}
+} */
 
-.card-btn button {
+/* .card-btn button {
   display: block;
   width: 100%;
   height: 3rem;
@@ -180,34 +180,34 @@ html {
   align-items: center;
   color: white;
   background-color: black;
-}
+} */
 
-hr.hr-content {
+/* hr.hr-content {
   border: 1px solid rgb(137, 134, 134);
-}
+} */
 
 
 /* ----------------------------------------------------- */
 
 
 /* ------------------------footer----------------------- */
-.footer {
+/* .footer {
   height: auto;
   padding: 2rem;
-}
+} */
 
-.footer-item {
+/* .footer-item {
   background-color: black;
   color: white;
   font-size: 4rem;
 
-}
+} */
 
 /* ----------------------------------------------------- */
 
 
 /* ------------------------popup/overlay---------------------- */
-.overlay {
+/* .overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -217,14 +217,14 @@ hr.hr-content {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
-}
+} */
 
-.overlay:target {
+/* .overlay:target {
   visibility: visible;
   opacity: 1;
-}
+} */
 
-.film-popup {
+/* .film-popup {
   display: block;
   margin: 0 auto;
   padding: 2rem 4rem;
@@ -235,21 +235,21 @@ hr.hr-content {
   position: relative;
   transition: all 5s ease-in-out;
   overflow-y: scroll;
-}
+} */
 
-.film-popup img {
+/* .film-popup img {
   height: 600px;
   width: 60%;
-}
+} */
 
-.film-popup h2 {
+/* .film-popup h2 {
   color: #333;
   font-family: Tahoma,
     Arial,
     sans-serif;
-}
+} */
 
-.film-popup .close {
+/* .film-popup .close {
   position: absolute;
   top: 10px;
   right: 20px;
@@ -258,19 +258,19 @@ hr.hr-content {
   font-weight: bold;
   text-decoration: none;
   color: rgb(157, 153, 153);
-}
+} */
 
-.film-popup .close:hover {
+/* .film-popup .close:hover {
   color: red;
-}
+} */
 
-.film-popup .content {
+/* .film-popup .content {
   display: block;
   text-align: center;
   max-height: 70%;
   font-size: 1.5rem;
   overflow: visible;
-}
+} */
 
 /* ----------------------------------------------------------------------- */
 
@@ -304,7 +304,7 @@ hr.hr-content {
 /* ----------------------------------------------------------------------- */
 
 /* -----------------------------------film detail------------------------------------ */
-.film-detail-container {
+/* .film-detail-container {
   margin: 3rem 20rem 5rem 20rem;
 }
 
@@ -345,13 +345,13 @@ hr.hr-content {
   font-size: 3rem;
   padding: 2.5rem 0;
   color: rgb(240, 224, 45);
-}
+} */
 
 
 /* --------------CONTACT------------ */
 /* CONTACT */
 
-.contact-info {
+/* .contact-info {
   display: flex;
   width: 100%;
   max-width: 1200px;
@@ -420,12 +420,43 @@ hr.hr-content {
 .contact-card:hover p {
   max-height: 40px;
   opacity: 1;
-}
+} */
 
 /* --------------------------------- */
 
 
-.icon {
+/* .icon {
   font-size: 8rem;
   color: rgb(204, 244, 227);
+} */
+
+.product-details {
+  color: white;
+  background-color: #009688;
+  padding: 1.5rem;
+  margin: 0.3rem 0;
+  text-align: left;
+  position: relative;
+}
+
+.menu {
+  text-align: left;
+}
+
+/* model case */
+.modal-show {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vmax;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+
+.card-image img {
+  text-align: center;
+  max-width: 100%;
+  height: 30rem;
 }

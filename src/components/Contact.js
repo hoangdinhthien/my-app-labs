@@ -1,42 +1,35 @@
-import React from "react";
-import { useContext } from 'react';
-import { ThemeContext } from './ThemeContext';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook } from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import { Button, Container, Textarea, TextInput, Icon, Select } from 'react-materialize';
 export default function Contact () {
-
-    const { theme, toggle, dark } = useContext( ThemeContext );
+    const handleSubmit = ( e ) => {
+        e.preventDefault();
+    };
     return (
-
-
-        <body>
-            {/* <div> */}
-            <div className='contact-body' style={{
-                backgroundColor: theme.color,
-                color: theme.backgroundColor
-            }}>
-                <div class="contact-card">
-                    <a href="tel:0123456789">
-                        <FontAwesomeIcon className="icon" icon={faPhone} />
-                    </a>
-                    <p >+84 123456789</p>
-                </div>
-                <div class="contact-card">
-                    <a href="mailto:dinhthienhoang0408@gmail.com">
-                        <FontAwesomeIcon className="icon" icon={faMailBulk} />
-                    </a>
-                    <p>dinthienhoang0408@gmail.com</p>
-                </div>
-                <div class="contact-card">
-                    <a href="https://www.facebook.com/profile.php?id=100012068957881" target="_blank">
-                        <img src='assets\images\Facebook_f_logo_(2019).svg.webp' alt='' />
-                    </a>
-                    <p>FaceBookInfo</p>
-                </div>
-            </div>
-            {/* </div> */}
-        </body>
+        <Container>
+            <h3>
+                Contact us
+            </h3>
+            <form onSubmit={handleSubmit}>
+                <TextInput id='TextInput-38' label='Your Name' />
+                <TextInput id='TextInput-39' label='Your Phone' />
+                <TextInput email id='TextInput-41' label='Email' validate />
+                <Select id='Select-46' multiple={false} onChange={function noRefCheck () { }} value=''>
+                    <option disabled vbalue=''>
+                        Choose your favourite nation
+                    </option>
+                    <option value='1'>
+                        England
+                    </option>
+                    <option value='2'>
+                        France
+                    </option>
+                    <option value='3'>
+                        Spain
+                    </option>
+                </Select>
+                <Textarea icon={<Icon>mode_edit</Icon>} id='Textarea-28' label='Your content' />
+                <Button>Submit</Button>
+            </form>
+        </Container >
     );
 }
